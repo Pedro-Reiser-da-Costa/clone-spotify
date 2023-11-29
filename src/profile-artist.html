@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+    <!--ICONES-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!--ICONES-->
+    <!--FONTE-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap" rel="stylesheet">
+    <!--FONTE-->
+    <!--favicon-->
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <!--favicon-->
+    <title>Clone Spotify</title>
+</head>
+<body class="h-screen flex flex-col bg-zinc-900 text-zinc-50">
+    <div class="flex flex-1">
+        <div class="hidden xl:block w-72 bg-zinc-950 px-6 py-2">
+            <div class="space-y-5">
+                <a class="pt-2 flex items-center gap-3 text-sm font-semibold font-montserrat text-zinc-200 transform transition hover:scale-105 delay-100" href="">
+                    <i class="bi bi-house"></i>
+                    Home
+                </a>
+                <a class="flex items-center gap-3 text-sm font-semibold font-montserrat text-zinc-200 transform transition hover:scale-105 delay-100" href="">
+                    <i class="bi bi-search"></i>
+                    Search
+                </a>
+                <a class="flex items-center gap-3 text-sm font-semibold font-montserrat text-zinc-200 transform transition hover:scale-105 delay-100" href="">
+                    <i class="bi bi-folder2-open"></i>
+                    Your Library
+                </a>
+            </div>
+
+            <div class="mt-10 flex flex-col space-y-5">
+                <a class="flex items-center gap-3 text-sm font-semibold font-montserrat text-zinc-200 transform transition hover:scale-105 delay-100" href="">
+                    <i class="bg-zinc-200 rounded bi bi-plus-circle text-black p-[4px] text-xl"></i>
+                    Create Playlist
+                </a>
+                <a class="flex items-center gap-3 text-sm font-semibold font-montserrat text-zinc-200 transform transition hover:scale-105 delay-100" href="">
+                    <i class="bg-colorido rounded bi bi-plus-circle text-black p-[4px] text-xl bi bi-plus-circle"></i>
+                    Liked Songs
+                </a>
+            </div>
+
+            <div class="mt-6 pt-6 border-t border-zinc-800 flex flex-col gap-2">
+                <a class="text-sm text-zinc-400 hover:text-zinc-100 transform transition hover:scale-105 delay-100" href="">Running Playlist</a>
+                <a class="text-sm text-zinc-400 hover:text-zinc-100 transform transition hover:scale-105 delay-100" href="">21st Birthday</a>
+                <a class="text-sm text-zinc-400 hover:text-zinc-100 transform transition hover:scale-105 delay-100" href="">April, 2023</a>
+                <a class="text-sm text-zinc-400 hover:text-zinc-100 transform transition hover:scale-105 delay-100" href="">Gym Session</a>
+                <a class="text-sm text-zinc-400 hover:text-zinc-100 transform transition hover:scale-105 delay-100" href="">Classic Anthems</a>
+                <a class="text-sm text-zinc-400 hover:text-zinc-100 transform transition hover:scale-105 delay-100" href="">R&B Favourites</a>
+                <a class="text-sm text-zinc-400 hover:text-zinc-100 transform transition hover:scale-105 delay-100" href="">Classical Music</a>
+                <a class="text-sm text-zinc-400 hover:text-zinc-100 transform transition hover:scale-105 delay-100" href="">Hayleys Bday</a>
+                <a class="text-sm text-zinc-400 hover:text-zinc-100 transform transition hover:scale-105 delay-100" href="">Discover Weekly</a>
+                <a class="text-sm text-zinc-400 hover:text-zinc-100 transform transition hover:scale-105 delay-100" href="">Liked From Radio</a>
+            </div>
+            <div class="flex mt-6 space-x-3">
+                <a class="transform transition hover:scale-105 delay-100 border rounded-full px-3 py-1 border-zinc-500" href="index.html" target="_blank">1</a>
+                <a class="transform transition hover:scale-105 delay-100 border rounded-full px-3 py-1 border-zinc-500" href="profile-artist.html" target="_blank">2</a> 
+                <a class="transform transition hover:scale-105 delay-100 border rounded-full px-3 py-1 border-zinc-500" href="search.html" target="_blank">3</a>
+                <a class="transform transition hover:scale-105 delay-100 border rounded-full px-3 py-1 border-zinc-500" href="song1.html" target="_blank">4</a>
+                <a class="transform transition hover:scale-105 delay-100 border rounded-full px-3 py-1 border-zinc-500" href="song2.html" target="_blank">5</a>
+            </div>
+        </div>
+        <main class="flex-1">
+                <div class="flex items-center gap-8 absolute p-6">
+                    <button class="rounded-full bg-zinc-800 p-1 text-xl cursor-pointer">
+                        <i class="bi bi-chevron-compact-left"></i>
+                    </button>
+                    <button class="hidden xl:block rounded-full bg-zinc-800 p-1 text-xl cursor-pointer">
+                        <i class="bi bi-chevron-compact-right"></i>
+                    </button>
+                </div>
+                <div class="hidden xl:block absolute pt-40 pl-14 text-green-600">
+                    <i class="bi bi-check-circle"></i>
+                </div>
+                <div class="hidden xl:block absolute pt-40 pl-20">
+                    <h2>Verified Artist</h2>
+                </div>
+                <div class="pl-28 pt-24 absolute xl:pt-52 xl:pl-14">
+                    <h1 class="text-7xl">SZA</h1>
+                </div>
+                <div class="pl-20 pt-44 absolute xl:pt-72 xl:pl-14">
+                    <h2 class="font-bold xl:font-normal  xl:text-white">140,9281 monthly listeners</h2>
+                </div>
+                <div class="absolute left-60 top-8 bg-opacity-50 text-white bg-black px-4 py-2 border rounded-lg xl:hidden">
+                    Follow
+                </div>
+                <div class="hidden absolute right-[150px] p-2 rounded-full bg-zinc-900 mt-16 pr-4 xl:flex gap-6 pt-2 items-center">
+                    <img src="imagens/image 3.png" alt="">
+                    <h2>Hayley Marjoram</h2>
+                    <i class="bi bi-chevron-down"></i>
+                </div>
+                <div class="shadow-2xl shadow-black">
+                    <img class="h-72 w-[360px] xl:h-[380px] xl:w-full" src="imagens/sza-grande.jpg" alt="">
+                </div>
+            <div class="hidden pl-6 pt-4 xl:flex items-center gap-4">
+                <i class="text-5xl text-green-500 bi bi-pause-circle cursor-pointer transform transition hover:scale-105 delay-100"></i>
+                <div class="border text-lg rounded-full p-2 px-6 cursor-pointer transform transition hover:scale-105 delay-100">Following</div>
+            </div>
+            <div class="xl:hidden w-20 ml-36 bg-green-600 flex justify-center mt-4 rounded-full py-2 px-4 bg-opacity-70">
+                <p class="text-lg">Play</p>
+            </div>
+            <div>
+                <div class="p-6 pl-6 xl:flex xl:justify-start flex justify-center">
+                    <h1 class="text-xl xl:text-2xl font-semibold">Popular</h1>
+                </div>
+                <div class="pl-4 xl:pl-10 xl:flex items-center gap-96 text-zinc-300">
+                    <div class="flex gap-4">
+                        <img class="rounded" src="imagens/snooze.png" alt="">
+                        <p>Snooze<br>SZA</p>
+                        <i class="pl-40 xl:hidden bi bi-three-dots-vertical"></i>
+                    </div>
+                    <h1 class="xl:block hidden">140,000</h1>
+                    <h1 class="xl:block hidden">04:01</h1>
+                </div>
+                <div class="pt-6 pl-4 xl:pl-10 xl:flex items-center gap-96 text-zinc-300">
+                    <div class="flex gap-4">
+                        <img class="rounded" src="imagens/snooze.png" alt="">
+                        <p>Snooze<br>SZA</p>
+                        <i class="pl-40 xl:hidden bi bi-three-dots-vertical"></i>
+                    </div>
+                    <h1 class="xl:block hidden">140,000</h1>
+                    <h1 class="xl:block hidden">04:01</h1>
+                </div>
+                <div class="pt-6 pl-4 xl:pl-10 xl:flex items-center gap-96 text-zinc-300">
+                    <div class="flex gap-4">
+                        <img class="rounded" src="imagens/snooze.png" alt="">
+                        <p>Snooze<br>SZA</p>
+                        <i class="pl-40 xl:hidden bi bi-three-dots-vertical"></i>
+                    </div>
+                    <h1 class="xl:block hidden">140,000</h1>
+                    <h1 class="xl:block hidden">04:01</h1>
+                </div>
+                <div class="pt-6 pl-4 xl:pl-10 xl:flex items-center gap-96 text-zinc-300">
+                    <div class="flex gap-4">
+                        <img class="rounded" src="imagens/snooze.png" alt="">
+                        <p>Snooze<br>SZA</p>
+                        <i class="pl-40 xl:hidden bi bi-three-dots-vertical"></i>
+                    </div>
+                    <h1 class="xl:block hidden">140,000</h1>
+                    <h1 class="xl:block hidden">04:01</h1>
+                </div>
+            </div>
+            <div class="pl-6 pt-6">
+                <h1 class="hidden xl:block text-2xl font-semibold">Discography</h1>
+                <div class="xl:flex gap-4 xl:p-4 flex">
+                    <div class="ml-20 xl:ml-0 p-2 rounded-full xl:bg-zinc-300 flex gap-6 pt-2 px-4 items-center xl:text-black font-semibold cursor-pointer transform transition hover:scale-105 delay-100">
+                        Popular Releases
+                    </div>
+                    <div class="hidden p-2 rounded-full bg-zinc-700 xl:flex gap-6 pt-2 px-4 items-center text-sm cursor-pointer transform transition hover:scale-105 delay-100">
+                        Singles & EPs
+                    </div>
+                    <div class="hidden p-2 rounded-full bg-zinc-700 xl:flex gap-6 pt-2 px-4 items-center text-sm cursor-pointer transform transition hover:scale-105 delay-100">
+                        Albums
+                    </div>
+                </div>
+            </div>
+            <div class="xl:hidden pl-4 pt-4 flex items-center text-zinc-300">
+                <div class="flex gap-4">
+                    <img class="rounded" src="imagens/snooze.png" alt="">
+                    <p>Snooze<br>SZA</p>
+                </div>
+            </div>
+            <div class="xl:hidden pl-4 pt-4 flex items-center text-zinc-300">
+                <div class="flex gap-4">
+                    <img class="rounded" src="imagens/snooze.png" alt="">
+                    <p>Snooze<br>SZA</p>
+                </div>
+            </div>
+            <div class="xl:hidden pl-4 pt-4 flex items-center text-zinc-300">
+                <div class="flex gap-4">
+                    <img class="rounded" src="imagens/snooze.png" alt="">
+                    <p>Snooze<br>SZA</p>
+                </div>
+            </div>
+            <div class="xl:hidden pl-4 pt-4 flex items-center text-zinc-300">
+                <div class="flex gap-4">
+                    <img class="rounded" src="imagens/snooze.png" alt="">
+                    <p>Snooze<br>SZA</p>
+                </div>
+            </div>
+            <div class="xl:hidden flex justify-center border w-40 ml-[105px] bg-black rounded-full py-1 mb-10 mt-10">
+                See Discography
+            </div>
+            <div class="hidden xl:grid grid-cols-5 gap-4 mt-4 p-6">
+                <img class="p-2 transform transition hover:scale-105 delay-100 rounded bg-zinc-800 flex gap-6 pt-2 px-4 items-center text-sm" src="imagens/fundo.png" alt="">
+                <img class="p-2 transform transition hover:scale-105 delay-100 rounded bg-zinc-800 flex gap-6 pt-2 px-4 items-center text-sm" src="imagens/fundo.png" alt="">
+                <img class="p-2 transform transition hover:scale-105 delay-100 rounded bg-zinc-800 flex gap-6 pt-2 px-4 items-center text-sm" src="imagens/fundo.png" alt="">
+                <img class="p-2 transform transition hover:scale-105 delay-100 rounded bg-zinc-800 flex gap-6 pt-2 px-4 items-center text-sm" src="imagens/fundo.png" alt="">
+                <img class="p-2 transform transition hover:scale-105 delay-100 rounded bg-zinc-800 flex gap-6 pt-2 px-4 items-center text-sm" src="imagens/fundo.png" alt="">
+            </div>
+        </main>
+    </div>
+    <footer class="hidden bg-zinc-800 border-t border-zinc-700 xl:flex items-center relative">
+        <div class="flex items-center gap-2 py-3 px-4 absolute">
+            <img class="rounded" src="imagens/snooze.png" alt="">
+            <div class="flex flex-col gap-1">
+                <h2 class="font-semibold">Snooze</h2>
+                <h4 class="text-zinc-500 text-xs">SZA</h4>
+            </div>
+            <i class="px-6 bi bi-heart"></i>
+        </div>
+        <div class="flex flex-col items-center w-full justify-center">
+            <div class="space-x-4">
+                <button>
+                    <i class="text-xl bi bi-shuffle text-zinc-500"></i>
+                </button>
+                <button>
+                    <i class="text-2xl bi bi-chevron-bar-left text-zinc-500"></i>
+                </button>
+                <button>
+                    <i class="text-3xl bi bi-pause-circle"></i>
+                </button>
+                <button>
+                    <i class="text-2xl bi bi-chevron-bar-right text-zinc-500"></i>
+                </button>
+                <button>
+                    <i class="text-xl bi bi-repeat text-zinc-500"></i>
+                </button>
+            </div>
+            <div class="flex items-center gap-2 mt-2">
+                <span class="text-xs text-zinc-500">3:00</span>
+                <div class="h-1 rounded-full w-96 bg-zinc-400">
+                    <div class="h-1 rounded-full w-80 bg-zinc-200"></div>
+                </div>
+                <span class="text-xs text-zinc-500">3:22</span>
+            </div>
+            </div>
+        <div class="flex items-center gap-4 pr-4">
+            <button>
+                <i class="text-xl bi bi-shuffle text-zinc-400"></i>
+            </button>
+            <button>
+                <i class="text-xl text-zinc-400 bi bi-list"></i>
+            </button>
+            <button>
+                <i class="text-xl text-zinc-400 bi bi-pc-display"></i>
+            </button>
+            <button>
+                <i class="text-2xl text-zinc-400 bi bi-volume-up"></i>
+            </button>
+            <div class="h-1 rounded-full w-20 bg-zinc-400">
+                <div class="h-1 rounded-full w-12 bg-zinc-200"></div>
+            </div>
+            <button>
+                <i class="text-xl text-zinc-400 bi bi-arrows-angle-expand"></i>
+            </button>
+        </div>
+    </footer>
+</body>
+</html>
